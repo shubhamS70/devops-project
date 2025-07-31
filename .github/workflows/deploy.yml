@@ -20,7 +20,7 @@ jobs:
         run: docker build -t shubham7s/mini-project:latest .
 
       - name: Push Docker Image
-        run: docker push /mini-project:latest
+        run: docker push shubham7s/mini-project:latest
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.10
